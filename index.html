@@ -19,6 +19,7 @@ html,body{height:100%;overflow:hidden;}
   --text:#3a2a1e;
   --text2:#6b4e3d;
   --seal:#c4907a;
+  --fucsia-lila:#96505a;
 }
 body{
   background-color:#f2e0d4;
@@ -34,7 +35,7 @@ body{
 
 /* PÉTALOS / CONFETTI dorado */
 #petals{position:fixed;inset:0;pointer-events:none;z-index:1;}
-.petal{position:absolute;top:-20px;animation:petalFall linear infinite;opacity:0;}
+.petal{position:absolute;top:-20px;animation:petalFall linear infinite;opacity:0;box-shadow:0 0 5px 1px rgba(255,255,255,.6);}
 @keyframes petalFall{
   0%{transform:translateY(0) rotate(0deg) translateX(0);opacity:.55;}
   50%{transform:translateY(50vh) rotate(220deg) translateX(14px);opacity:.38;}
@@ -62,9 +63,9 @@ body{
 }
 .header-name{
   font-family:'Dancing Script',cursive;
-  font-size:clamp(54px,15vw,88px);
-  color:var(--text);line-height:1.05;
-  text-shadow:0 2px 18px rgba(201,169,110,.2);
+  font-size:clamp(62px,18vw,104px);
+  color:var(--fucsia-lila);line-height:1.05;
+  text-shadow:0 2px 18px rgba(150,80,90,.28);
 }
 .header-subtitle{
   font-family:'Playfair Display',serif;
@@ -128,7 +129,7 @@ body{
 .letter-name{
   font-family:'Dancing Script',cursive;
   font-size:clamp(24px,6.5vw,36px);
-  color:var(--rose-deep);line-height:1;
+  color:var(--fucsia-lila);line-height:1;
 }
 .letter-msg{
   font-family:'IM Fell English',serif;
@@ -316,7 +317,7 @@ body{
     {w:5,h:5,br:'50%'},                /* círculos */
     {w:6,h:2,br:'2px'},               /* confetti rectángulo */
   ];
-  const cols=['#c9a96e','#b5737a','#e8d5a3','#dcccb8','#c4907a','#f0e4d0','#8b4a52'];
+  const cols=['#e8c766','#f5deb3','#fff8dc','#d4af37','#ffffff','#c0c0c0','#f0e68c'];
   for(let i=0;i<32;i++){
     const p=document.createElement('div');p.className='petal';
     const f=formas[Math.floor(Math.random()*formas.length)];
@@ -346,7 +347,7 @@ function openEnvelope(){
   setTimeout(()=>{
     scene.classList.add('done');
     document.getElementById('overlay').classList.add('fade-in');
-    setTimeout(()=>{window.location.href='invitacion.html';},750);
+    setTimeout(()=>{window.location.href='invitacion-natali.html';},750);
   },3500);
 }
 </script>
