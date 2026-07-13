@@ -21,9 +21,10 @@ html,body{height:100%;overflow:hidden;}
   --seal:#c4907a;
 }
 body{
-  background:
-    radial-gradient(ellipse 80% 60% at 50% 30%, rgba(181,115,122,.10) 0%, transparent 70%),
-    linear-gradient(160deg,#f5ece0 0%,#fdf8f2 50%,#ede0cc 100%);
+  background-color:#f2e0d4;
+  background-image:url('bg-natali.png');
+  background-size:cover;
+  background-position:center;
   font-family:'Cormorant Garamond',serif;
   display:flex;flex-direction:column;align-items:center;
   justify-content:center;min-height:100vh;min-height:100dvh;
@@ -79,7 +80,7 @@ body{
 /* ESCENA */
 .scene{
   position:relative;
-  width:min(92vw,500px);
+  width:min(88vw,460px);
   opacity:0;animation:fadeUp 1s .6s forwards;
   cursor:pointer;z-index:10;
 }
@@ -212,6 +213,7 @@ body{
 </head>
 <body>
 <div id="petals"></div>
+
 <div id="overlay"></div>
 
 <!-- Esquinas decorativas estilo Luis XV -->
@@ -344,7 +346,7 @@ function openEnvelope(){
   setTimeout(()=>{
     scene.classList.add('done');
     document.getElementById('overlay').classList.add('fade-in');
-    setTimeout(()=>{window.location.href='invitacion.html';},750);
+    setTimeout(()=>{window.location.href='invitacion-natali.html';},750);
   },3500);
 }
 </script>
