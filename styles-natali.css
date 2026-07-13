@@ -10,9 +10,11 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
 body{
-  background:
-    radial-gradient(ellipse 70% 50% at 50% 20%, rgba(181,115,122,.08) 0%, transparent 65%),
-    linear-gradient(170deg,#f5ece0 0%,#fdf8f2 55%,#ede0cc 100%);
+  background-color:#f2e0d4;
+  background-image:url('bg-natali.png');
+  background-size:100% auto;
+  background-repeat:repeat-y;
+  background-attachment:scroll;
   font-family:'Cormorant Garamond',serif;color:var(--text);overflow-x:hidden;
 }
 ::-webkit-scrollbar{width:4px;}
@@ -32,9 +34,7 @@ body{
 #hero{
   min-height:100vh;display:flex;flex-direction:column;align-items:center;
   justify-content:center;position:relative;overflow:hidden;padding:60px 24px;
-  background:
-    radial-gradient(ellipse 75% 65% at 50% 45%, rgba(181,115,122,.13) 0%, transparent 70%),
-    linear-gradient(170deg,#f5ece0 0%,#fdf8f2 50%,#ede0cc 100%);
+  background:transparent;
 }
 /* Foto de fondo semitransparente */
 #hero-bg-photo{
@@ -72,7 +72,7 @@ body{
 .hero-divider{width:140px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:18px auto;opacity:0;animation:fadeUp 1s .9s forwards;}
 
 .music-btn-wrap{margin-top:36px;opacity:0;animation:fadeUp 1s 1.3s forwards;}
-.music-card{background:rgba(253,248,242,0.82);border:1px solid rgba(201,169,110,0.32);border-radius:16px;padding:20px 26px;max-width:320px;margin:0 auto;backdrop-filter:blur(8px);box-shadow:0 4px 24px rgba(201,169,110,.1);}
+.music-card{background:rgba(255,248,244,0.88);border:1px solid rgba(201,169,110,0.38);border-radius:16px;padding:20px 26px;max-width:320px;margin:0 auto;backdrop-filter:blur(10px);box-shadow:0 4px 24px rgba(181,115,122,.15);}
 .music-card p{font-style:italic;font-size:16px;color:var(--text2);margin-bottom:13px;line-height:1.6;text-align:center;}
 .btn-music{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,var(--gold) 0%,#a8803c 100%);border:none;border-radius:50px;color:var(--cream);padding:12px 24px;font-family:'Playfair Display',serif;font-size:15px;font-weight:600;cursor:pointer;transition:transform .2s,box-shadow .2s;letter-spacing:1px;}
 .btn-music:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(201,169,110,.38);}
@@ -84,8 +84,8 @@ body{
 
 /* SECCIONES */
 .section{position:relative;z-index:2;padding:72px 24px;text-align:center;border-bottom:1px solid rgba(201,169,110,.15);}
-.s-dark{background:linear-gradient(160deg,#f0e4d4 0%,#f8f0e4 100%);}
-.s-rose{background:linear-gradient(160deg,#f8ece8 0%,#f5e4dc 100%);}
+.s-dark{background:rgba(245,232,224,0.45);}
+.s-rose{background:rgba(240,222,216,0.42);}
 .sec-tag{display:inline-block;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;color:var(--gold);letter-spacing:6px;text-transform:uppercase;margin-bottom:12px;background:rgba(201,169,110,.1);padding:5px 16px;border-radius:50px;border:1px solid rgba(201,169,110,.28);}
 .sec-title{font-family:'Playfair Display',serif;font-size:clamp(26px,6vw,40px);font-weight:600;color:var(--dark);line-height:1.2;font-style:italic;}
 .sec-body{font-size:clamp(17px,3.5vw,20px);line-height:1.9;color:var(--text);max-width:480px;margin:16px auto 0;}
@@ -93,7 +93,7 @@ body{
 .ornament{color:rgba(201,169,110,.5);font-size:18px;letter-spacing:8px;}
 
 /* INVITACIÓN */
-.invite-card{max-width:480px;margin:26px auto 0;background:var(--card-bg);border:1px solid var(--card-border);border-radius:16px;padding:34px 28px;position:relative;box-shadow:0 4px 32px rgba(201,169,110,.1);backdrop-filter:blur(6px);}
+.invite-card{max-width:480px;margin:26px auto 0;background:rgba(255,248,244,0.88);border:1px solid rgba(201,169,110,0.35);border-radius:16px;padding:34px 28px;position:relative;box-shadow:0 4px 32px rgba(181,115,122,.12);backdrop-filter:blur(10px);}
 .invite-card::before{content:'✦';position:absolute;color:var(--gold);opacity:.4;font-size:12px;top:14px;left:18px;}
 .invite-card::after{content:'✦';position:absolute;color:var(--gold);opacity:.4;font-size:12px;bottom:14px;right:18px;}
 .invite-who{font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:5px;color:var(--rose-old);text-transform:uppercase;margin-bottom:10px;}
@@ -248,3 +248,15 @@ footer{position:relative;z-index:2;padding:60px 24px 40px;text-align:center;back
   .ld-icon{font-size:18px;}
   .dress-grid{gap:16px;}
 }
+
+/* ═══ ROSAS DECORATIVAS COSTADOS ═══ */
+.roses-left,.roses-right{
+  position:fixed;top:0;width:clamp(70px,14vw,130px);height:100vh;
+  pointer-events:none;z-index:3;overflow:hidden;
+}
+.roses-left{left:0;}
+.roses-right{right:0;}
+.rose-svg{position:absolute;opacity:.62;}
+
+/* Footer y secciones — también marmolado */
+footer{background:rgba(240,220,210,0.5);}
