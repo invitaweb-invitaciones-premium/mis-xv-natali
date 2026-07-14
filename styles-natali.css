@@ -40,7 +40,7 @@ body{
 /* Foto de fondo semitransparente */
 #hero-bg-photo{
   position:absolute;inset:0;
-  background-image:url('img/image_0.jpeg');
+  background-image:url('img/foto-principal.jpg');
   background-size:cover;background-position:center top;
   opacity:0.11;filter:blur(2px) saturate(0.6) sepia(.2);z-index:0;
 }
@@ -125,6 +125,9 @@ body{
 #mood-response{margin-top:18px;font-style:italic;font-size:18px;color:var(--rose-old);min-height:26px;transition:opacity .4s;}
 
 /* LUGAR */
+.map-embed-wrap{max-width:460px;margin:18px auto 0;border-radius:14px;overflow:hidden;border:1px solid rgba(201,169,110,.3);box-shadow:0 4px 20px rgba(201,169,110,.15);}
+.map-embed-wrap iframe{display:block;filter:sepia(.12) saturate(.9);}
+
 .music-sign-wrap{display:flex;justify-content:center;margin-top:30px;}
 .music-sign{
   position:relative;display:inline-flex;align-items:center;gap:10px;
@@ -278,4 +281,4 @@ footer{position:relative;z-index:2;padding:60px 24px 40px;text-align:center;back
 .rose-svg{position:absolute;opacity:.62;}
 
 /* Footer y secciones — también marmolado */
-footer{background:rgba(240,220,210,0.5);}
+footer{background:rgba(240,220,210,0.5);
