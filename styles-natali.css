@@ -13,12 +13,12 @@ html{scroll-behavior:smooth;}
 body{
   background-color:#f2e0d4;
   background-image:url('bg-natali.png');
-  background-size:auto;
+  background-size:100% auto;
   background-repeat:repeat-y;
-  background-position:top center;
   background-attachment:scroll;
   font-family:'Cormorant Garamond',serif;color:var(--text);overflow-x:hidden;
 }
+
 ::-webkit-scrollbar{width:4px;}
 ::-webkit-scrollbar-track{background:var(--beige);}
 ::-webkit-scrollbar-thumb{background:var(--gold);border-radius:2px;}
