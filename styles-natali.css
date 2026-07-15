@@ -98,8 +98,8 @@ body{
 
 /* INVITACIÓN */
 .invite-card{max-width:480px;margin:26px auto 0;background:rgba(255,248,244,0.88);border:1px solid rgba(201,169,110,0.35);border-radius:16px;padding:34px 28px;position:relative;box-shadow:0 4px 32px rgba(181,115,122,.12);backdrop-filter:blur(10px);}
-.invite-card::before{content:'✦';position:absolute;color:var(--gold);opacity:.4;font-size:12px;top:14px;left:18px;}
-.invite-card::after{content:'✦';position:absolute;color:var(--gold);opacity:.4;font-size:12px;bottom:14px;right:18px;}
+.invite-card::before{content:'✦';position:absolute;color:var(--bordo);opacity:.55;font-size:12px;top:14px;left:18px;}
+.invite-card::after{content:'✦';position:absolute;color:var(--bordo);opacity:.55;font-size:12px;bottom:14px;right:18px;}
 .invite-who{font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:5px;color:var(--rose-old);text-transform:uppercase;margin-bottom:10px;}
 .invite-text{font-size:clamp(17px,3.5vw,21px);line-height:1.9;color:var(--text);font-style:italic;}
 .invite-date{display:inline-block;margin-top:18px;background:linear-gradient(135deg,rgba(201,169,110,.14),rgba(181,115,122,.08));border:1px solid rgba(201,169,110,.35);border-radius:50px;padding:9px 22px;font-family:'Playfair Display',serif;font-size:16px;color:var(--gold);letter-spacing:2px;}
