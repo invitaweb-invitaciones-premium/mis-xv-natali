@@ -13,8 +13,9 @@ html{scroll-behavior:smooth;}
 body{
   background-color:#f2e0d4;
   background-image:url('bg-natali.png');
-  background-size:100% auto;
+  background-size:auto;
   background-repeat:repeat-y;
+  background-position:top center;
   background-attachment:scroll;
   font-family:'Cormorant Garamond',serif;color:var(--text);overflow-x:hidden;
 }
@@ -236,9 +237,9 @@ textarea.rsvp-input{resize:vertical;min-height:80px;}
 footer{position:relative;z-index:2;padding:60px 24px 40px;text-align:center;background:transparent;}
 .footer-name{font-family:'Pinyon Script',cursive;font-size:42px;color:var(--gold);}
 .footer-sub{font-size:12px;color:var(--text3);letter-spacing:3px;margin-top:5px;text-transform:uppercase;}
-.footer-dev{margin-top:28px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:4px;color:rgba(58,42,30,.25);text-transform:uppercase;}
-.footer-dev a{color:var(--gold);opacity:.55;text-decoration:none;}
-.footer-dev a:hover{opacity:1;}
+.footer-dev{margin-top:28px;font-family:'Raleway',sans-serif;font-size:12px;font-weight:500;letter-spacing:3px;color:rgba(58,42,30,.55);text-transform:uppercase;}
+.footer-dev a{color:var(--gold-deep);opacity:1;font-weight:700;text-decoration:none;}
+.footer-dev a:hover{text-decoration:underline;}
 
 /* LOADING */
 .sheet-loading{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;color:var(--gold);text-align:center;margin-top:12px;display:none;}
