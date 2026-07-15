@@ -301,6 +301,3 @@ footer{position:relative;z-index:2;padding:60px 24px 40px;text-align:center;back
 .roses-left{left:0;}
 .roses-right{right:0;}
 .rose-svg{position:absolute;opacity:.62;}
-
-/* Footer y secciones — también marmolado */
-footer{background:rgba(240,220,210,0.5);}
