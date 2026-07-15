@@ -86,7 +86,7 @@ body{
 @keyframes fadeUp{from{opacity:0;transform:translateY(22px);}to{opacity:1;transform:translateY(0);}}
 
 /* SECCIONES */
-.section{position:relative;z-index:2;padding:72px 24px;text-align:center;border-bottom:1px solid rgba(201,169,110,.15);}
+.section{position:relative;z-index:2;padding:72px 24px;text-align:center;background:transparent;border-bottom:none;}
 .s-dark{background:transparent;}
 .s-rose{background:transparent;}
 .sec-tag{display:inline-block;font-family:'Raleway',sans-serif;font-size:10px;font-weight:700;color:var(--gold-deep);letter-spacing:6px;text-transform:uppercase;margin-bottom:12px;background:rgba(169,120,36,.14);padding:5px 16px;border-radius:50px;border:1.5px solid rgba(169,120,36,.5);}
