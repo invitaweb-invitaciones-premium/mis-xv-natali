@@ -234,7 +234,7 @@ textarea.rsvp-input{resize:vertical;min-height:80px;}
 
 /* FOOTER */
 footer{position:relative;z-index:2;padding:60px 24px 40px;text-align:center;background:transparent;}
-.footer-name{font-family:'Dancing Script',cursive;font-size:34px;color:var(--gold);}
+.footer-name{font-family:'Pinyon Script',cursive;font-size:42px;color:var(--gold);}
 .footer-sub{font-size:12px;color:var(--text3);letter-spacing:3px;margin-top:5px;text-transform:uppercase;}
 .footer-dev{margin-top:28px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:4px;color:rgba(58,42,30,.25);text-transform:uppercase;}
 .footer-dev a{color:var(--gold);opacity:.55;text-decoration:none;}
