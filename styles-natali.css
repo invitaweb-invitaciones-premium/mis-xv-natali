@@ -301,3 +301,28 @@ footer{position:relative;z-index:2;padding:60px 24px 40px;text-align:center;back
 .roses-left{left:0;}
 .roses-right{right:0;}
 .rose-svg{position:absolute;opacity:.62;}
+/* ═══ CIERRE / FOTO FINAL ═══ */
+.closing-frame{
+  position:relative;max-width:420px;margin:30px auto 0;
+  padding:22px;
+  background:linear-gradient(160deg,var(--cream),var(--gold-pale));
+  border:1px solid rgba(169,120,36,.3);
+  border-radius:4px;
+  box-shadow:0 14px 40px rgba(92,26,31,.16),0 0 0 6px rgba(253,248,242,.6),0 0 0 7px rgba(169,120,36,.25);
+}
+.closing-corner{position:absolute;font-size:20px;color:var(--gold-deep);opacity:.55;}
+.closing-corner.tl{top:8px;left:10px;}
+.closing-corner.tr{top:8px;right:10px;transform:scaleX(-1);}
+.closing-corner.bl{bottom:8px;left:10px;transform:scaleY(-1);}
+.closing-corner.br{bottom:8px;right:10px;transform:scale(-1);}
+.closing-photo{
+  width:100%;aspect-ratio:4/5;overflow:hidden;
+  border:1px solid rgba(169,120,36,.35);
+  box-shadow:inset 0 0 0 6px var(--cream);
+}
+.closing-photo img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block;}
+.closing-caption{
+  margin-top:16px;text-align:center;
+  font-family:'Pinyon Script',cursive;font-size:28px;
+  color:var(--bordo);
+}
