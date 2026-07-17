@@ -313,18 +313,18 @@ const TOKEN    = 'natali2026xv';
 /* PÉTALOS */
 (function(){
   const c=document.getElementById('petals');
-  const cols=['#e8c766','#f5deb3','#fff8dc','#d4af37','#ffffff','#c0c0c0','#f0e68c'];
-  for(let i=0;i<30;i++){
+  const cols=['#e8c766','#f5deb3','#fff8dc','#d4af37','#ffffff','#f0e68c'];
+  for(let i=0;i<55;i++){
     const p=document.createElement('div'); p.className='petal';
-    const s=6+Math.random()*9;
-    const shapes=['50%','2px','60% 40% 55% 35%'];
+    const s=1.5+Math.random()*3;
+    const color=cols[Math.floor(Math.random()*cols.length)];
     p.style.cssText=[
       'left:'+(Math.random()*100)+'vw',
-      'width:'+s+'px','height:'+(s*1.35)+'px',
-      'background:'+cols[Math.floor(Math.random()*cols.length)],
-      'border-radius:'+shapes[Math.floor(Math.random()*shapes.length)],
-      'animation-duration:'+(5+Math.random()*7)+'s',
-      'animation-delay:'+(Math.random()*10)+'s'
+      'width:'+s+'px','height:'+s+'px',
+      'background:'+color,
+      'box-shadow:0 0 '+(s*2)+'px '+(s*.8)+'px '+color,
+      'animation-duration:'+(5+Math.random()*7)+'s, '+(.3+Math.random()*.4)+'s',
+      'animation-delay:'+(Math.random()*10)+'s, '+(Math.random()*.4)+'s'
     ].join(';');
     c.appendChild(p);
   }
