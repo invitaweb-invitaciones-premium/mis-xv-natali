@@ -26,11 +26,19 @@ body{
 
 /* PÉTALOS */
 #petals{position:fixed;inset:0;pointer-events:none;z-index:5;}
-.petal{position:absolute;top:-20px;animation:petalFall linear infinite;opacity:0;box-shadow:0 0 6px 1px rgba(255,255,255,.55);}
+.petal{
+  position:absolute;top:-20px;border-radius:50%;
+  animation:petalFall linear infinite, petalTwinkle .4s ease-in-out infinite alternate;
+  opacity:0;
+}
 @keyframes petalFall{
-  0%{transform:translateY(0) rotate(0deg) translateX(0);opacity:.55;}
-  50%{transform:translateY(50vh) rotate(200deg) translateX(18px);opacity:.38;}
+  0%{transform:translateY(0) rotate(0deg) translateX(0);opacity:.7;}
+  50%{transform:translateY(50vh) rotate(200deg) translateX(18px);opacity:.5;}
   100%{transform:translateY(108vh) rotate(380deg) translateX(-12px);opacity:0;}
+}
+@keyframes petalTwinkle{
+  0%{filter:brightness(1) saturate(1);}
+  100%{filter:brightness(2.4) saturate(1.4);}
 }
 
 /* HERO */
