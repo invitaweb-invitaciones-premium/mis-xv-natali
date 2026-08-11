@@ -50,7 +50,7 @@ body{
 /* Foto de fondo semitransparente */
 #hero-bg-photo{
   position:absolute;inset:0;
-  background-image:url('foto-4.jpg');
+  background-image:url('img/foto-4.jpg');
   background-size:cover;background-position:center top;
   opacity:0.18;filter:blur(1px) saturate(0.75) sepia(.15);z-index:0;
 }
