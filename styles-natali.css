@@ -145,6 +145,8 @@ body{
   color:var(--cream);padding:15px 32px;border-radius:50px;
   box-shadow:0 8px 26px rgba(162,78,97,.35),inset 0 1px 2px rgba(255,255,255,.25);
   border:1px solid rgba(253,248,242,.35);
+  margin:30px auto 0;
+  max-width:fit-content;
 }
 .music-sign::before,.music-sign::after{
   content:'✦';position:absolute;top:50%;transform:translateY(-50%);
@@ -153,7 +155,8 @@ body{
 .music-sign::before{left:14px;}
 .music-sign::after{right:14px;}
 .music-sign-icon{font-size:18px;}
-.music-sign-text{font-family:'Playfair Display',serif;font-style:italic;font-weight:600;font-size:clamp(14px,3.6vw,18px);letter-spacing:.5px;line-height:1.35;padding:0 6px;}
+.music-sign-text{font-family:'Playfair Display',serif;font-style:italic;font-weight:600;font-size:clamp(14px,3.6vw,18px);letter-spacing:.5px;line-height:1.35;padding:0 6px;text-align:center;}
+
 .lugar-info{display:table;width:100%;max-width:500px;margin:26px auto;border-collapse:separate;border-spacing:8px 0;}
 .lugar-detail{display:table-cell;width:33.33%;text-align:center;background:var(--card-bg);border:1px solid rgba(201,169,110,.24);border-radius:14px;padding:12px 4px;box-shadow:0 2px 14px rgba(201,169,110,.08);vertical-align:middle;}
 .ld-icon{font-size:22px;display:block;margin-bottom:4px;}
