@@ -234,7 +234,7 @@ textarea.rsvp-input{resize:vertical;min-height:80px;}
 .cuenta-row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid rgba(201,169,110,.12);}
 .cuenta-row:last-child{border-bottom:none;}
 .cuenta-key{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;}
-.cuenta-val{font-size:19px;color:var(--text);}
+.cuenta-val{font-family:'Courier New',Courier,monospace;font-size:19px;font-weight:700;color:var(--text);letter-spacing:1px;}
 
 /* COMPARTIR */
 .compartir-card{max-width:340px;margin:26px auto 0;background:var(--card-bg);border:1px solid rgba(201,169,110,.2);border-radius:18px;padding:26px 20px;box-shadow:0 4px 20px rgba(201,169,110,.08);}
