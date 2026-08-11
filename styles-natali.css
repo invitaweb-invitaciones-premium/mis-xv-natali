@@ -160,8 +160,8 @@ body{
 .lugar-info{display:table;width:100%;max-width:500px;margin:26px auto;border-collapse:separate;border-spacing:8px 0;}
 .lugar-detail{display:table-cell;width:33.33%;text-align:center;background:var(--card-bg);border:1px solid rgba(201,169,110,.24);border-radius:14px;padding:12px 4px;box-shadow:0 2px 14px rgba(201,169,110,.08);vertical-align:middle;}
 .ld-icon{font-size:22px;display:block;margin-bottom:4px;}
-.ld-label{font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:4px;color:var(--gold);text-transform:uppercase;display:block;margin-bottom:4px;}
-.ld-val{font-size:clamp(16px,3.8vw,21px);font-weight:600;color:var(--dark);font-family:'Playfair Display',serif;}
+.ld-label{font-family:'Raleway',sans-serif;font-size:12px;font-weight:600;letter-spacing:3px;color:var(--gold);text-transform:uppercase;display:block;margin-bottom:5px;}
+.ld-val{font-size:clamp(18px,4.2vw,23px);font-weight:600;color:var(--dark);font-family:'Playfair Display',serif;}
 .map-wrap{max-width:520px;margin:0 auto;border-radius:14px;overflow:hidden;border:1px solid rgba(201,169,110,.28);box-shadow:0 4px 24px rgba(201,169,110,.1);}
 
 /* FORMS */
