@@ -444,6 +444,11 @@ function addRSVPPerson(){
 function removeRSVPPerson(idx){
   const el=document.getElementById('rsvp-form-'+idx); if(el)el.remove();
 }
+Dale, el tema es que como cada fetch es rápido, el salto entre personas se ve como un "tranco" en vez de un deslizamiento. Vamos a simular un avance continuo dentro de cada tramo (mientras espera la respuesta del fetch, la barra va creciendo de a poquito sola), y al terminar cada persona, ajusta al valor real.
+
+JS — reemplazá la función submitRSVP de nuevo, esta vez con avance simulado:
+
+javascript
 async function submitRSVP(){
   const forms=document.querySelectorAll('#rsvp-forms-container .rsvp-person-form');
   const personas=[]; let allValid=true;
@@ -459,15 +464,32 @@ async function submitRSVP(){
   const progressWrap=document.getElementById('rsvp-progress-wrap');
   const progressBar=document.getElementById('rsvp-progress-bar');
   btn.disabled=true; loading.classList.add('show'); progressWrap.classList.add('show');
+
+  let currentPct=0;
   progressBar.style.width='0%';
-  let done=0;
-  for(const p of personas){
+  const total=personas.length;
+
+  for(let i=0;i<total;i++){
+    const p=personas[i];
+    const segStart=(i/total)*100;
+    const segEnd=((i+0.92)/total)*100; // deja un margen para el "snap" final del tramo
+
+    // avance simulado dentro del tramo actual, mientras se espera la respuesta real
+    const ticker=setInterval(()=>{
+      currentPct += (segEnd-currentPct)*0.15;
+      if(currentPct>segEnd) currentPct=segEnd;
+      progressBar.style.width=currentPct+'%';
+    },80);
+
     await fetch(RSVP_URL,{method:'POST',body:JSON.stringify({nombre:p.name,extra:p.dato,timestamp:new Date().toLocaleString('es-UY'),token:TOKEN})}).catch(()=>{});
-    done++;
-    progressBar.style.width=(done/personas.length*100)+'%';
+
+    clearInterval(ticker);
+    currentPct=((i+1)/total)*100;
+    progressBar.style.width=currentPct+'%';
   }
+
   loading.classList.remove('show');
-  setTimeout(()=>{progressWrap.classList.remove('show');},400);
+  setTimeout(()=>{progressWrap.classList.remove('show');},450);
   document.getElementById('rsvp-wrap').style.display='none';
   const suc=document.getElementById('rsvp-success'); suc.style.display='block';
   const nombres=personas.map(p=>p.name).join(', ');
