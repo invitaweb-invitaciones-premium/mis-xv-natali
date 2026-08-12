@@ -444,11 +444,7 @@ function addRSVPPerson(){
 function removeRSVPPerson(idx){
   const el=document.getElementById('rsvp-form-'+idx); if(el)el.remove();
 }
-Dale, el tema es que como cada fetch es rápido, el salto entre personas se ve como un "tranco" en vez de un deslizamiento. Vamos a simular un avance continuo dentro de cada tramo (mientras espera la respuesta del fetch, la barra va creciendo de a poquito sola), y al terminar cada persona, ajusta al valor real.
-
-JS — reemplazá la función submitRSVP de nuevo, esta vez con avance simulado:
-
-javascript
+  
 async function submitRSVP(){
   const forms=document.querySelectorAll('#rsvp-forms-container .rsvp-person-form');
   const personas=[]; let allValid=true;
