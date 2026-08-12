@@ -340,5 +340,5 @@ footer{position:relative;z-index:2;padding:60px 24px 40px;text-align:center;back
 .progress-bar{
   height:100%;width:0%;border-radius:50px;
   background:linear-gradient(90deg,var(--bordo-light),var(--bordo));
-  transition:width .35s ease;
+  transition:width .15s linear;
 }
